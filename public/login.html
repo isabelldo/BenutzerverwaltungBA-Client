@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="./css/app.css"/>
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-icons/font/bootstrap-icons.min.css">
+
+    <title>Benutzerverwaltung</title>
+</head>
+<body>
+<div id="background-cover">
+    <nav class="nav">
+        <div class="container-fluid">
+            <a class="title" href="#">Benutzerverwaltung</a>
+        </div>
+    </nav>
+    <div class="container py-5 custom-container">
+        <div class="row d-flex align-items-center justify-content-center h-100">
+            <div class="col-md-8 col-lg-7 col-xl-6">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+                     class="img-fluid" alt="Phone image">
+            </div>
+            <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                <form id="login-form">
+                    <!-- username input -->
+                    <div class="form-outline mb-4">
+                        <input type="text" id="login-username" class="form-control form-control-lg" required/>
+                        <label class="form-label" for="login-username">Username</label>
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                        <input type="password" id="login-password" class="form-control form-control-lg" required/>
+                        <label class="form-label" for="login-password">Password</label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+                    <!-- Register buttons -->
+                    <div class="text-center">
+                        <p>Not a member? <a id="register" href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="popup" id="popupWindow">
+                <div class="popup-container">
+        <div class="popuptext" id="myPopup">
+            <form id="registration-form">
+    <h2>Registration</h2>
+                <!-- Email input -->
+      <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="firstName" class="form-control" required/>
+                      <label class="form-label" for="firstName">First name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="lastName" class="form-control" required/>
+                      <label class="form-label" for="lastName">Last name</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Username input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+        <input type="text" id="username" class="form-control" required/>
+        <label class="form-label" for="username">Username</label>
+    </div>
+                <!-- Email input -->
+    <div data-mdb-input-init class="form-outline mb-4">
+        <input type="email" id="email" class="form-control" required/>
+        <label class="form-label" for="email">E-mail address</label>
+    </div>
+
+                <!-- Password input -->
+    <div data-mdb-input-init class="form-outline mb-4">
+        <input type="password" id="password" class="form-control" required/>
+        <label class="form-label" for="password">Password</label>
+    </div>
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                    <button type="button" class="btn btn-secondary" id="cancel" data-mdb-ripple-init>Cancel</button>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <!-- Submit button -->
+    <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+                    </div>
+                  </div>
+                </div>
+        </form>
+        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="module" src="./js/app.js"></script>
+</body>
+</html>
